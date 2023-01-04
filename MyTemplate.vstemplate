@@ -1,0 +1,27 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>gmod_binary_template</Name>
+    <Description>A very basic template for creating new binary modules for garry's mod, without needing to take time to set things up!</Description>
+    <ProjectType>VC</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>gmod_binary_template</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="gmod_binary_template.vcxproj" File="gmod_binary_template.vcxproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="false" TargetFileName="$projectname$.vcxproj.filters">gmod_binary_template.vcxproj.filters</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="main.cpp">main.cpp</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Interface.h">INCLUDES\GARRYSMOD\LUA\Interface.h</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="LuaBase.h">INCLUDES\GARRYSMOD\LUA\LuaBase.h</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="SourceCompat.h">INCLUDES\GARRYSMOD\LUA\SourceCompat.h</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Types.h">INCLUDES\GARRYSMOD\LUA\Types.h</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="UserData.h">INCLUDES\GARRYSMOD\LUA\UserData.h</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
